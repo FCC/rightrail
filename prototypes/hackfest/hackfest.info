@@ -1,0 +1,5 @@
+name = Hackfest
+description = Hackfest module.
+core = 6.x
+package = Hackfest
+;dependencies[] = path

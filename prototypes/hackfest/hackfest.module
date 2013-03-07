@@ -1,0 +1,47 @@
+<?php
+/**
+ * @file
+ * Main module file for Hackfest module.
+ */
+
+
+/**
+ * Implementation of hook_block(). 
+ */
+function hackfest_block($op = 'list', $delta = 0, $edit = array()) {
+ $blocks = array();
+  
+  switch ($op) {
+    //Define the block
+	case 'list':			
+	  $blocks[0]['info'] = t('Promo');
+	  $blocks[0]['cache'] = BLOCK_NO_CACHE;
+	return $blocks;
+			
+	//Display the block	
+	case 'view':
+	  //$block['subject'] = $headline;
+	  $block['subject'] = t('Promo');
+	  //$block['content'] = t('content');
+	  $block['content'] = get_homepage_carousel_item();
+	return $block;
+  }  
+}
+
+
+function get_homepage_carousel_item() {
+  
+  $sql = 'SELECT * FROM {fcccm_slides} WHERE carousel_id = 1 AND active = 1 AND weight = 1';
+  $result = db_query($sql);
+  //$carousel = db_fetch_object($result);
+  
+  
+  while ($carousel = db_fetch_object($result)) {
+    $headline = $carousel->headline;
+	$body = $carousel->body;
+	$output = $headline . '<br>' . $body;
+  }
+  
+  //return t('block content');
+  return $output;
+}
