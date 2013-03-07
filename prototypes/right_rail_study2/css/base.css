@@ -1,0 +1,570 @@
+
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Tabs
+	#Forms
+	#Misc */
+
+
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html { font-size: 100%; overflow-y: scroll; /* -webkit-overflow-scrolling: touch; */ -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,  q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+/* #Basic Styles
+================================================== */
+	body {
+	background: #fff;
+	font: 12px/18px Helvetica, Arial, "Arimo", "HelveticaNeue", "Helvetica Neue", clean, sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+/* #Typography
+================================================== */
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+/* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+/* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* #Headings
+================================================== */
+h1, h2, h3, h4, h5, h6 {
+	color: #191919;
+	font-family: Helvetica, Arial, "Arimo", "HelveticaNeue", "Helvetica Neue", clean, sans-serif;
+	font-weight: bold;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-weight: inherit;
+}
+
+h1 {
+	font-size: 46px;
+	line-height: 50px;
+	margin-bottom: 14px;
+}
+
+h2 {
+	font-size: 35px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 28px;
+	line-height: 34px;
+	margin-bottom: 8px;
+}
+
+h4 {
+	font-size: 21px;
+	line-height: 30px;
+	margin-bottom: 4px;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 17px;
+	line-height: 24px;
+}
+
+h6 {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.subheader {
+	color: #777;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+p img {
+	margin: 0;
+}
+
+p.lead {
+	font-size: 21px;
+	line-height: 27px;
+	color: #777;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+small {
+	font-size: 80%;
+}
+
+/*	Blockquotes  */
+	blockquote, blockquote p {
+	font-size: 17px;
+	line-height: 24px;
+	color: #777;
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 0 20px;
+	padding: 0 20px 0 19px;
+	border-left: 10px solid #C6E2ED;
+}
+
+blockquote cite {
+	display: block;
+	font-size: 12px;
+	color: #555;
+}
+
+blockquote cite:before {
+	content: "\2014 \0020";
+}
+
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
+	color: #555;
+}
+
+hr {
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 10px 0 20px;
+	height: 0;
+}
+
+/* #Links
+================================================== */
+a { color: #115B8A; text-decoration: none; }
+
+a, a:visited {
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover, a:focus {
+	border-bottom-color: #337B94;
+}
+
+/* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: 0; }
+a:focus { outline: thin dotted; }
+
+p a, p a:visited {
+	line-height: inherit;
+}
+
+/* #Lists
+================================================== */
+ul, ol { margin: 1em 0; padding: 0; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+
+/*ul, ol {
+	margin-bottom: 20px;
+}*/
+
+ul {
+	list-style: none outside;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol, ul.square, ul.circle, ul.disc {
+	margin-left: 30px;
+}
+
+ul.square {
+	list-style: square outside;
+}
+
+ul.circle {
+	list-style: circle outside;
+}
+
+ul.disc {
+	list-style: disc outside;
+}
+
+ul ul, ul ol,  ol ol, ol ul {
+	margin: 4px 0 5px 30px;
+	/*font-size: 90%;*/
+}
+
+ul ul li, ul ol li,  ol ol li, ol ul li {
+	margin-bottom: 6px;
+}
+
+li {
+	line-height: 18px;
+	margin-bottom: 8px;
+}
+
+ul.large li {
+	line-height: 21px;
+}
+
+li p {
+	line-height: 18px;
+}
+
+dd { margin: 0; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/* #Images
+================================================== */
+img { border: 0; -ms-interpolation-mode: bicubic; max-width: 100%; height: auto; }
+
+.olMap img {
+	max-width: none;	
+}
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure { margin: 0; }
+
+
+/* #Buttons
+================================================== */
+
+a.button,  button,  input[type="submit"],  input[type="reset"],  input[type="button"], .btnUpload, .btnFolder, .btnCandidate, .btnPAC, .btnCity, .btnState, .btnCounty, .btnOffice {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0095b2), color-stop(1, #006e90) );
+	background:-moz-linear-gradient( center top, #0095b2 5%, #006e90 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095b2', endColorstr='#006e90');
+	background-color:#0095b2;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	display:inline-block;
+	color:#FFF;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:4px 10px 5px;
+	text-decoration:none;
+	border: 0 none;
+	box-shadow: inset 1px 1px rgba(0,0,0,0.2)
+}
+
+a.button:hover,  button:hover,  input[type="submit"]:hover,  input[type="reset"]:hover,  input[type="button"]:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #007697), color-stop(1, #005071) );
+	background:-moz-linear-gradient( center top, #007697 5%, #005071 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007697', endColorstr='#005071');
+	background-color:#007697;
+}
+
+a.button:active,  button:active,  input[type="submit"]:active,  input[type="reset"]:active,  input[type="button"]:active {
+	-webkit-box-shadow:inset 0 0 15px rgba(0,0,0,0.3);
+	-moz-box-shadow:inset 0 0 15px rgba(0,0,0,0.3);
+	box-shadow:inset 0 0 15px rgba(0,0,0,0.3);
+	position:relative;
+	top:1px;
+}
+
+.button.full-width,  button.full-width,  input[type="submit"].full-width,  input[type="reset"].full-width,  input[type="button"].full-width {
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+}
+
+
+/* #Tabs (activate in tabs.js)
+================================================== */
+	ul.tabs {
+	display: block;
+	margin: 0 0 20px 0;
+	padding: 0;
+	border-bottom: solid 1px #ddd;
+}
+
+ul.tabs li {
+	display: block;
+	width: auto;
+	height: 30px;
+	padding: 0;
+	float: left;
+	margin-bottom: 0;
+}
+
+ul.tabs li a {
+	display: block;
+	text-decoration: none;
+	width: auto;
+	height: 29px;
+	padding: 0px 20px;
+	line-height: 30px;
+	border: solid 1px #ddd;
+	border-width: 1px 1px 0 0;
+	margin: 0;
+	background: #f5f5f5;
+	font-size: 13px;
+}
+
+ul.tabs li a.active {
+	background: #fff;
+	height: 30px;
+	position: relative;
+	top: -4px;
+	padding-top: 4px;
+	border-left-width: 1px;
+	margin: 0 0 0 -1px;
+	color: #111;
+	-moz-border-radius-topleft: 2px;
+	-webkit-border-top-left-radius: 2px;
+	border-top-left-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+ul.tabs li:first-child a.active {
+	margin-left: 0;
+}
+
+ul.tabs li:first-child a {
+	border-width: 1px 1px 0 1px;
+	-moz-border-radius-topleft: 2px;
+	-webkit-border-top-left-radius: 2px;
+	border-top-left-radius: 2px;
+}
+
+ul.tabs li:last-child a {
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+ul.tabs-content {
+	margin: 0;
+	display: block;
+}
+
+ul.tabs-content > li {
+	display:none;
+}
+
+ul.tabs-content > li.active {
+	display: block;
+}
+
+/* Clearfixing tabs for beautiful stacking */
+	ul.tabs:before,  ul.tabs:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+ul.tabs:after {
+	clear: both;
+}
+
+ul.tabs {
+	zoom: 1;
+}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+form { margin: 0; }
+fieldset { border: 0; margin: 0 0 20px; padding: 0; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+label { cursor: pointer; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+
+/*
+input[type="text"],  input[type="password"],  input[type="email"],  textarea,  select {
+  border: 1px solid #7BADEA;
+	border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 7px #CCCCCC;
+	color: #043D83;
+	font: 13px "Arimo", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	margin-bottom: 20px;
+	max-width: 100%;
+	-moz-border-radius: 3px;
+	outline: none;
+	padding: 4px 5px 5px;
+	-webkit-border-radius: 3px;
+	vertical-align: baseline;
+}
+*/
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    border: 1px solid #AAAAAA;
+    border-radius: 3px 3px 3px 3px;
+    color: #666666;
+    font: 11px Helvetica,Arial,"Arimo","HelveticaNeue","Helvetica Neue",sans-serif;
+    outline: medium none;
+    padding: 4px 5px 5px;
+    vertical-align: baseline;
+}
+select {
+	padding: 2px;
+}
+
+input[type="text"]:focus,  input[type="password"]:focus,  input[type="email"]:focus,  textarea:focus {
+	border: 1px solid #aaa;
+	color: #444;
+/*	-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	box-shadow:  0 0 3px rgba(0,0,0,.2); */
+}
+
+textarea {
+	min-height: 60px;
+}
+
+label,  legend {
+	display: block;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/*select {
+		width: 220px; }*/
+input[type="checkbox"] {
+	display: inline;
+}
+
+label span,  legend span {
+	font-weight: normal;
+	font-size: 13px;
+	color: #444;
+}
+
+input[type="checkbox"]+label, input[type="radio"]+label { margin-right:20px; *margin-right:10px; padding-bottom:1px; font-weight:normal; border-bottom:none; text-decoration:none; }
+
+
+/* #Misc
+================================================== */
+.remove-bottom { margin-bottom: 0 !important; }
+.half-bottom { margin-bottom: 10px !important; }
+.add-bottom { margin-bottom: 20px !important; }
+
+
+/* =============================================================================
+   Non-semantic helper classes
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
+::selection { background: #a1cce3; color: #fff; text-shadow: none; 

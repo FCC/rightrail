@@ -1,0 +1,46 @@
+
+/* #Media Queries
+================================================== */
+
+/* Tablet Landscape size */
+@media only screen and (min-width: 960px) and (max-width: 1400px) {
+	body { background: url("../img/page-bg-mobile.jpg") no-repeat scroll center 10px #010103; }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	body { background: url("../img/page-bg-mobile.jpg") no-repeat scroll center 10px #010103; }
+	.span9 { width: 538px; }
+	#main { background: url("../img/main-body-bg-medium.png") repeat-y scroll left top #FFFFFF; }
+	#main .left { padding: 0; margin-top: 20px; }
+	#sidebar .find-box { width: 160px; }
+	#map-container, #coveragemap-large{ width: 520px; }
+	#coveragemap { width: 200px; }
+	#map-container.profilePg, #coveragemap-large.profilePg { width: 460px; }
+	#sidebar .social-media li { height: 55px; }
+	.sel-perPage { display: inline; }
+	ul.station-meta li { padding: 0 5px; }
+	.station-meta .maps { padding-left: 0; }
+	.maps .icon { margin: 0 3px 0 2px; }
+	.stationLogo { max-width: 110px; }
+	.brdst-banner { padding-bottom: 20px; }
+	.profile.meta-notes { clear: left; }
+	.station-meta .maps { clear: both; }
+	.brdst-banner .profile-search input[type="text"] { width: 260px; }
+	.brdst-banner .profile-search { *clear: both; *float: none; }
+	.profile-search input[type="text"] { width: 136px; }	
+	/*.brdst-banner .station-header-left { margin-bottom: 15px; }
+	.brdst-banner .station-header-right { clear: both; float: none; }
+	.brdst-banner #profile-picture { height: 120px; width: 120px; }*/
+	#bd-profile { width: 540px; }
+	#fileupload table { width: 75%; }
+	#bigMap { width: auto; }
+	#footer .left { padding: 20px 0 0; }
+	#footer .right { padding: 10px 10px 50px; padding: 10px 10px 50px 7px\9; }
+	#footer-nav .columns.omega { margin-left: 0; }
+	.results li { width: 208px; }
+	.pillButtons li a {padding: 0.5em 0.7em;}
+}
+
+
+
