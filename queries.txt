@@ -1,0 +1,8 @@
+// Query to get all carousel slides
+select * from fcccm_slides where carousel_id=1 && active=1
+
+
+// This grabs the 2nd from the carousel … and then the 956 is the id to get the image
+select * from fcccm_slides where carousel_id=1 && active=1 && weight=1
+// get image ... this has a given id but should be a variable
+select filepath from files where fid=956
